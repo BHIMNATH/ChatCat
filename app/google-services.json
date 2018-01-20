@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "408749881931",
+    "firebase_url": "https://chatcat-bhim.firebaseio.com",
+    "project_id": "chatcat-bhim",
+    "storage_bucket": "chatcat-bhim.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408749881931:android:6b7fcf9577fb7c2d",
+        "android_client_info": {
+          "package_name": "com.bhim.www.chatcat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408749881931-epl1itts5kn3r7q86ibu9guem4qlpatd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEUXauxMz65wV3AAV668LAp0L0NFSBltQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
