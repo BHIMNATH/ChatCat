@@ -50,4 +50,25 @@ public class MainActivity extends AppCompatActivity {
             // Load chat room contents
             displayChatMessages();
         }
+        FloatingActionButton fab = (FloatingActionButton)findViewById(R.id.fab);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText input = (EditText)findViewById(R.id.input);
+
+                // Read the input field and push a new instance of ChatMessage to the Firebase database
+                FirebaseDatabase.getInstance()
+                        .getReference()
+                        .push()
+                        .setValue(new ChatMessage(input.getText().toString(),
+                                FirebaseAuth.getInstance()
+                                        .getCurrentUser()
+                                        .getDisplayName())
+                        );
+
+                // Clear all inputs
+                input.setText("");
+            }
+        });
 }
