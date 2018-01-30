@@ -27,12 +27,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_toLeftOf="@id/fab"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:id="@+id/textInputLayout">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Input"
+            android:hint="Message"
             android:id="@+id/input"
             />
     </android.support.design.widget.TextInputLayout>
@@ -46,4 +47,15 @@
         android:divider="@android:color/transparent"
         android:id="@+id/list_of_messages"
         android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/clearBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/com_facebook_button_background"
+        android:text="Clear All"
+        android:textColor="#ffffff"/>
 </RelativeLayout>
