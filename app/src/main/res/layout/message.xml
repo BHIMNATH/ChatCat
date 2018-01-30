@@ -1,34 +1,43 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#dd4eacbf">
+    android:layout_width="match_parent" android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:orientation="vertical"
-        android:paddingBottom="10dp"
-        android:background="@drawable/bubble_out">
+        android:paddingBottom="10dp">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/message_user"
+        android:paddingLeft="5dp"
         android:id="@+id/message_time"
         android:layout_margin="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:background="#e9bffa">
+        <TextView
+            android:layout_alignParentTop="true"
+            android:id="@+id/message_user"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:textStyle="bold"/>
 
-    <TextView
-        android:layout_alignParentTop="true"
-        android:id="@+id/message_user"
-        android:layout_width="fill_parent"
-        android:layout_height="30dp"
-        android:gravity="center"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/message_user"
-        android:layout_marginTop="5dp"
-        android:id="@+id/message_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_user"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/message_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20dp"/>
+        </LinearLayout>
    </LinearLayout>
 </RelativeLayout>
