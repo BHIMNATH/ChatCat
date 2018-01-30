@@ -38,17 +38,6 @@
             />
     </android.support.design.widget.TextInputLayout>
 
-    <Button
-        android:id="@+id/clearBut"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textInputLayout"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="385dp"
-        android:background="@drawable/com_facebook_button_background"
-        android:text="Clear All"
-        android:textColor="#ffffff" />
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
